@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury cars</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="animation.js" defer></script>
+</head>
+
+<body>
+    <section id="cover_1">
+        <div class="container">
+            <header>
+                <img src="./img/Luxury_cars.png" alt="logotip">
+                <nav class="links">
+                    <ul>
+                        <li><a href="./main.html#about_Us">О нас</a></li>
+                        <li><a href="./main.html#popular">Популярное</a></li>
+                        <li><a href="./main.html#conditions">Условия</a></li>
+                        <li><a href="./main.html#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
+    </section>
+
+    <section id="model">
+        <div class="container">
+            <h2>Mercedes CLS 450 4matic</h2>
+            <div class="containerModel">
+                <img src="./img/image-1.png">
+                <div class="modelDescription">
+                    <p>Бак: 3.0 л.</p>
+                    <p>Лошадиные силы: 367</p>
+                    <p>Привод: полный</p>
+                    <p>Цена:</p>
+                    <p>от 12.000 ₽ до 19.000 ₽</p>
+                    <a href="#costRent"><button class="prices">Цены</button></a>
+                    <a href="#booking"><button class="rent">Арендовать</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="costRent">
+        <div class="container">
+            <h3>Стоимость аренды</h3>
+            <table>
+                <tr class="tariffs">
+                    <td>Тариф</td>
+                    <td>1 час</td>
+                    <td>3 часа</td>
+                    <td>пол дня</td>
+                    <td>1 сутки</td>
+                    <td>С водителем</td>
+                    <td>Для свадьбы</td>
+                    <td class="last">Для фотосессии</td>
+                </tr>
+                <tr>
+                    <td>Цена</td>
+                    <td>14.000 ₽</td>
+                    <td>16.000 ₽</td>
+                    <td>19.000 ₽</td>
+                    <td>17.000 ₽</td>
+                    <td>20.000 ₽</td>
+                    <td>18.000 ₽</td>
+                    <td class="last">12.000 ₽</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <div class="booking-desc">
+                <h2>ЗАБРОНИРУЙТЕ АВТОМОБИЛЬ</h2>
+            </div>
+            <form action="" method="">
+                <div class="form-flex">
+                    <div class="inputs-2">
+                        <div class="leftInputs">
+                            <input id="name" type="text" required placeholder="Ваше имя">
+                            <input id="beginningLease" type="text" placeholder="Начало аренды" onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}">
+                        </div>
+                        <input id="phone" type="tel" required placeholder="Телефон">
+                        <input id="endLease" type="text" placeholder="Конец аренды" onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}">
+                    </div>
+                </div>
+                <div class="application"><button>Подтвердить бронь</button></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="logotip">
+        <div class="logotip"><img src="./img/Luxury_cars.png"></div>
+    </section>
+</body>
+
+</html>
