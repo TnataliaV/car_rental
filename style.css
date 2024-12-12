@@ -433,13 +433,349 @@ table{
     margin-bottom: 90px;
 }
 
+.fade-in {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+
+.fade-in.active {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
 html {
     scroll-behavior: smooth;
 }
-@media (max-width: 430px){
-    .container {
+@media (max-width: 430px) {
+    /* .container {
         width: 380px;
         margin: 0 auto;
     }
-    
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-left: -65px;
+    }
+
+    .coverDescription button {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    .coverDescription p {
+        font-size: 26px;
+    } */
+
+    /* .about_Us {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .about_Us img {
+        z-index: -1;
+        filter: blur(2px);
+    }
+
+    .containerAbout_Us {
+        margin-left: 10px;
+    }
+
+    .about_UsDescription {
+        padding: 50px;
+    }
+
+    #catalog {
+        margin-top: 15vh;
+    }
+
+    .container_manual {
+        text-align: center;
+    }
+
+    .container_manual h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container_manual button {
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .name input {
+        margin-top: 20px;
+        text-align: center;
+        width: fit-content;
+        margin-left: 45px;
+    }
+
+    .btn-get {
+        margin-top: 60px;
+        width: 300px;
+    }
+
+    .blog_card {
+        width: 380px;
+        margin-bottom: 60px;
+    }
+
+    .blog_card img {
+        width: 100%;
+    }
+
+    #contacts {
+        margin-top: 5vh;
+    }
+
+    .contact {
+        margin-left: 0;
+        color: white;
+        text-align: center;
+    }
+
+    .container_contacts {
+        margin-left: 0;
+        color: white;
+        text-align: center;
+
+    }
+
+    .contacts p {
+        color: white;
+    }
+
+    .contacts h2 {
+        color: white;
+    }
+
+    .logotip img {
+        width: 150px;
+    } */
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .links li {
+        margin: 10px 0;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+
+    .cover {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #cover {
+        background-size: contain;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .coverDescription p {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .coverDescription button {
+        margin-top: 40px;
+    }
+
+    .about_Us p {
+        margin-top: 20px;
+    }
+
+    .about_Us li {
+        font-size: 16px;
+    }
+
+    .popular img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .central_photo {
+        margin: 20px 0;
+    }
+
+    .popular button {
+        margin-top: 20px;
+    }
+
+    .popular_button {
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .central {
+        margin: 0;
+    }
+
+    form {
+        padding: 40px 0;
+    }
+
+    .form-flex {
+        flex-direction: column;
+    }
+
+    .inputs, .inputs-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .application {
+        justify-content: center;
+    }
+
+    #contacts {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .block_contacts {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contacts h2 {
+        font-size: 20px;
+    }
+
+    .contacts li {
+        font-size: 14px;
+    }
+
+    .logotip {
+        margin: 20px 0;
+    }
+
+    .catalog img {
+        margin-top: 20px;
+    }
+
+    .catagoria {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catagoria p {
+        margin: 10px;
+    }
+
+    .cars {
+        flex-direction: column;
+    }
+
+    .car {
+        width: 100%;
+    }
+
+    .car img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .modelDescription p {
+        font-size: 18px;
+    }
+
+    .containerModel {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .containerModel img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modelDescription button {
+        margin: 10px 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    #booking {
+        background-size: contain;
+        background-position: center;
+    }
+
+    #booking form {
+        padding-top: 20px;
+    }
+
+    #booking button {
+        margin-bottom: 40px;
+    }
 }

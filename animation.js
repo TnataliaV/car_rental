@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.1 
     };
 
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target);
+                entry.target.classList.add('active'); 
+                observer.unobserve(entry.target); 
             }
         });
     };
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     sections.forEach(section => {
-        observer.observe(section);
+        section.classList.add('fade-in'); 
+        observer.observe(section); 
     });
 });
