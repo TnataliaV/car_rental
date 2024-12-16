@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section); 
     });
 });
+
+document.querySelector('.burger-menu').addEventListener('click', function () {
+    const mobileMenu = document.querySelector('.mobile.links');
+    mobileMenu.classList.toggle('open');
+});
