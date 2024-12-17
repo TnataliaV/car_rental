@@ -461,21 +461,32 @@ html {
     display: none;
 }
 
-.mobile-p {
+.burger-menu {
     display: none;
 }
 
-.burger-menu {
+.c-mobile-p {
     display: none;
+}
+
+.c-desktop-p {
+    display: block;
+}
+
+.q-mobile-p {
+    display: none !important;
 }
 
 @media (max-width: 430px) {
     .container {
         width: 380px;
+        position: relative;
     }
+
     header {
-        padding-top: 0;
+        padding-top: 10px;
     }
+
     .desktop {
         display: none;
     }
@@ -501,13 +512,13 @@ html {
     .mobile.links {
         display: none;
         position: absolute;
-        top: 40px;
-        right: 17px;
+        top: 48px;
+        right: 0;
         background-color: #fff;
         padding: 0 10px;
         z-index: 10;
     }
-    
+
     .mobile.links.open {
         display: block;
     }
@@ -554,7 +565,11 @@ html {
         font-size: 12px;
     }
 
-    .mobile-p {
+    .c-desktop-p {
+        display: none;
+    }
+
+    .c-mobile-p {
         display: block;
     }
 
@@ -577,6 +592,10 @@ html {
 
     .about_Us li {
         font-size: 16px;
+    }
+
+    .popular h2 {
+        text-align: center;
     }
 
     .popular img {
@@ -607,23 +626,48 @@ html {
         margin-bottom: 20px;
     }
 
+    .q-desktop-p {
+        display: none !important;
+    }
+
+    .q-mobile-p {
+        display: block !important;
+        text-align: center;
+    }
+
+    #questions {
+        background-image: url(./img/фон3.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+
     form {
         padding: 40px 0;
     }
 
     .form-flex {
         flex-direction: column;
+        align-items: center;
     }
 
-    .inputs,
-    .inputs-2 {
-        flex-direction: column;
-        align-items: center;
+    .inputs {
+        margin-right: 0;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 120px;
     }
 
     input,
     textarea {
-        width: 100%;
+        padding: 10px 20px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 
@@ -631,22 +675,34 @@ html {
         justify-content: center;
     }
 
+    form button {
+        padding: 10px 30px;
+    }
+
     #contacts {
-        height: auto;
-        padding: 40px 0;
+        background-size: cover;
+        background-position: center;
     }
 
     .block_contacts {
-        width: 100%;
-        padding: 20px;
+        width: 155px;
+        height: 165px;
+        margin-top: 110px;
+        padding-left: 20px;
     }
 
     .contacts h2 {
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 10px;
     }
 
     .contacts li {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .contacts img {
+        width: 80px;
+        height: 15px;
     }
 
     .logotip {
@@ -658,17 +714,42 @@ html {
         z-index: 1;
     }
 
+    .catagoria-img {
+        display: none;
+    }
+
     .catalog img {
         margin-top: 20px;
+    }
+
+    .catalog h2 {
+        text-align: center;
     }
 
     .catagoria {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
-    .catagoria p {
-        margin: 10px;
+    .catagoria a {
+        display: block;
+        padding: 10px 15px;
+        margin: 0;
+        border-radius: 8px;
+        background-color: #333;
+        text-align: center;
+        font-size: 14px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .catagoria a:hover {
+        background-color: #555;
+        transform: scale(1.05);
+    }
+
+    .left {
+        margin-left: 0;
     }
 
     .cars {
