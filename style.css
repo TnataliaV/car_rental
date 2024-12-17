@@ -469,11 +469,19 @@ html {
     display: none;
 }
 
-.c-desktop-p {
-    display: block;
+.q-mobile-p {
+    display: none !important;
 }
 
-.q-mobile-p {
+.m-mobile-p {
+    display: none !important;
+}
+
+.b-mobile {
+    display: none !important;
+}
+
+.cost-mobile {
     display: none !important;
 }
 
@@ -529,7 +537,7 @@ html {
 
     .links a {
         color: #141414;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .links ul {
@@ -623,7 +631,19 @@ html {
     }
 
     .card {
+        width: 245px;
+        height: 150px;
         margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .cards p {
+        font-size: 14px;
+        margin-top: 10px;
     }
 
     .q-desktop-p {
@@ -667,7 +687,7 @@ html {
     input,
     textarea {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -737,14 +757,14 @@ html {
         padding: 10px 15px;
         margin: 0;
         border-radius: 8px;
-        background-color: #333;
+        background-color: #2B2D32;
         text-align: center;
         font-size: 14px;
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .catagoria a:hover {
-        background-color: #555;
+        background-color: #474950;
         transform: scale(1.05);
     }
 
@@ -766,13 +786,21 @@ html {
         margin: 10px 0;
     }
 
+    .m-desktop-p {
+        display: none !important;
+    }
+
+    .m-mobile-p {
+        display: block !important;
+    }
+
     .modelDescription p {
         font-size: 18px;
     }
 
     .containerModel {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         margin: 20px 0;
     }
 
@@ -781,22 +809,72 @@ html {
         height: auto;
     }
 
+    .modelDescription {
+        margin-top: 20px;
+    }
+
     .modelDescription button {
         margin: 10px 0;
     }
 
+    #costRent h3 {
+        text-align: center;
+    }
+
+    .cost-desktop {
+        display: none !important;
+    }
+
+    .cost-mobile {
+        display: block !important;
+    }
+
     table {
-        width: 100%;
-        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        width: 267px;
+        margin-left: auto; 
+        margin-right: auto; 
     }
 
     td {
-        padding: 10px;
+        font-size: 18px;
+        padding: 20px 10px;
+        border-right: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .bottom td {
+        border-bottom: 0;
+    }
+
+    .c-left {
+        border-left: 1px solid #ffffff;
+    }
+
+    .b-desktop {
+        display: none !important;
+    }
+
+    .b-mobile {
+        display: block !important;
+        text-align: center;
     }
 
     #booking {
-        background-size: contain;
-        background-position: center;
+        background-image: url(./img/фон3.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .inputs-2 input {
+        margin-right: 0;
+    }
+
+    .leftInputs {
+        margin-bottom: 0;
+        margin-right: 0;
     }
 
     #booking form {
@@ -804,6 +882,6 @@ html {
     }
 
     #booking button {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }

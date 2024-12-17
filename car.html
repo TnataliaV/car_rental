@@ -47,8 +47,11 @@
                     <p>Бак: 3.0 л.</p>
                     <p>Лошадиные силы: 367</p>
                     <p>Привод: полный</p>
-                    <p>Цена:</p>
-                    <p>от 12.000 ₽ до 19.000 ₽</p>
+                    <div class="m-desktop-p">
+                        <p>Цена:</p>
+                        <p>от 12.000 ₽ до 19.000 ₽</p>
+                    </div>
+                    <p class="m-mobile-p">Цена: от 12.000 ₽ до 19.000 ₽</p>
                     <a href="#costRent"><button class="prices">Цены</button></a>
                     <a href="#booking"><button class="rent">Арендовать</button></a>
                 </div>
@@ -59,7 +62,7 @@
     <section id="costRent">
         <div class="container">
             <h3>Стоимость аренды</h3>
-            <table>
+            <table class="cost-desktop">
                 <tr class="tariffs">
                     <td>Тариф</td>
                     <td>1 час</td>
@@ -81,6 +84,40 @@
                     <td class="last">12.000 ₽</td>
                 </tr>
             </table>
+            <table class="cost-mobile">
+                <tr>
+                    <td>Тариф</td>
+                    <td class="c-left">Цена</td>
+                </tr>
+                <tr>
+                    <td>1 час</td>
+                    <td class="c-left">14.000 ₽</td>
+                </tr>
+                <tr>
+                    <td>3 часа</td>
+                    <td class="c-left">16.000 ₽</td>
+                </tr>
+                <tr>
+                    <td>пол дня</td>
+                    <td class="c-left">19.000 ₽</td>
+                </tr>
+                <tr>
+                    <td>1 сутки</td>
+                    <td class="c-left">17.000 ₽</td>
+                </tr>
+                <tr>
+                    <td>С водителем</td>
+                    <td class="c-left">20.000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Для свадьбы</td>
+                    <td class="c-left">18.000 ₽</td>
+                </tr>
+                <tr class="bottom">
+                    <td>Для фотосессии</td>
+                    <td class="c-left">12.000 ₽</td>
+                </tr>
+            </table>
         </div>
     </section>
 
@@ -91,13 +128,23 @@
             </div>
             <form action="" method="">
                 <div class="form-flex">
-                    <div class="inputs-2">
+                    <div class="b-desktop inputs-2">
                         <div class="leftInputs">
                             <input id="name" type="text" required placeholder="Ваше имя">
-                            <input id="beginningLease" type="text" placeholder="Начало аренды" onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}">
+                            <input id="beginningLease" type="text" placeholder="Начало аренды"
+                                onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}">
                         </div>
                         <input id="phone" type="tel" required placeholder="Телефон">
-                        <input id="endLease" type="text" placeholder="Конец аренды" onfocus="this.type='time'" onblur="if(this.value==''){this.type='text'}">
+                        <input id="endLease" type="text" placeholder="Конец аренды" onfocus="this.type='time'"
+                            onblur="if(this.value==''){this.type='text'}">
+                    </div>
+                    <div class="b-mobile inputs-2">
+                        <input id="name" type="text" required placeholder="Ваше имя">
+                        <input id="phone" type="tel" required placeholder="Телефон">
+                        <input id="beginningLease" type="text" placeholder="Начало аренды" onfocus="this.type='time'"
+                            onblur="if(this.value==''){this.type='text'}">
+                        <input id="endLease" type="text" placeholder="Конец аренды" onfocus="this.type='time'"
+                            onblur="if(this.value==''){this.type='text'}">
                     </div>
                 </div>
                 <div class="application"><button>Подтвердить бронь</button></div>
