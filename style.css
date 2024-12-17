@@ -461,144 +461,34 @@ html {
     display: none;
 }
 
+.mobile-p {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
 @media (max-width: 430px) {
-
-    /* .about_Us {
-        flex-direction: column;
-        display: flex;
-    }
-
-    .about_Us img {
-        z-index: -1;
-        filter: blur(2px);
-    }
-
-    .containerAbout_Us {
-        margin-left: 10px;
-    }
-
-    .about_UsDescription {
-        padding: 50px;
-    }
-
-    #catalog {
-        margin-top: 15vh;
-    }
-
-    .container_manual {
-        text-align: center;
-    }
-
-    .container_manual h2 {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .container_manual button {
-        margin: 0px;
-        margin-top: 40px;
-    }
-
-    .name {
-        text-align: center;
-    }
-
-    .name input {
-        margin-top: 20px;
-        text-align: center;
-        width: fit-content;
-        margin-left: 45px;
-    }
-
-    .btn-get {
-        margin-top: 60px;
-        width: 300px;
-    }
-
-    .blog_card {
-        width: 380px;
-        margin-bottom: 60px;
-    }
-
-    .blog_card img {
-        width: 100%;
-    }
-
-    #contacts {
-        margin-top: 5vh;
-    }
-
-    .contact {
-        margin-left: 0;
-        color: white;
-        text-align: center;
-    }
-
-    .container_contacts {
-        margin-left: 0;
-        color: white;
-        text-align: center;
-
-    }
-
-    .contacts p {
-        color: white;
-    }
-
-    .contacts h2 {
-        color: white;
-    }
-
-    .logotip img {
-        width: 150px;
-    } */
-    /* .container {
-        width: 380px;
-        margin: 0 auto;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        margin-left: -65px;
-    }
-
-    .coverDescription button {
-        margin-top: 40px;
-    }
-
-    h1 {
-        font-size: 54px;
-    }
-
-    .coverDescription p {
-        font-size: 26px;
-    } */
     .container {
         width: 380px;
     }
-
-    .mobile.links {
+    header {
+        padding-top: 0;
+    }
+    .desktop {
         display: none;
     }
 
-
     .burger-menu {
-        display: none;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        background: #ffffff;
+        padding: 0 5px;
+        margin-top: 5px;
     }
 
     .burger-icon {
         display: block;
-        width: 25px;
+        width: 20px;
         height: 3px;
         background-color: #141414;
         margin: 5px 0;
@@ -606,86 +496,47 @@ html {
 
     .burger-menu {
         display: block;
-
     }
 
     .mobile.links {
         display: none;
         position: absolute;
-        top: 80px;
-        right: 10px;
+        top: 40px;
+        right: 17px;
         background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0 10px;
+        z-index: 10;
     }
-
+    
     .mobile.links.open {
         display: block;
     }
 
-    /* .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .burger {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    .burger-menu {
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 28px;
-    }
-
-    .mobile-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #ffffff;
-        border-radius: 10px;
-        z-index: 1000;
-    }
-
-    .mobile-menu.open {
-        display: flex;
-    } */
-
     .links li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .links a {
         color: #141414;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .links ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 20px;
+        padding: 0 10px;
+        margin: 10px 0;
     }
 
     .cover {
         height: auto;
-        padding: 20px 0;
-    }
-
-    #cover {
-        background-size: contain;
-        background-position: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     h2 {
@@ -703,16 +554,24 @@ html {
         font-size: 12px;
     }
 
+    .mobile-p {
+        display: block;
+    }
+
+    .coverDescription {
+        padding-bottom: 0;
+    }
+
     .coverDescription p {
-        font-size: 24px;
-        margin-top: 20px;
+        font-size: 18px;
+        margin-top: 10px;
     }
 
     .coverDescription button {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
-    /* .about_Us p {
+    .about_Us p {
         margin-top: 20px;
     }
 
@@ -727,7 +586,8 @@ html {
     }
 
     .central_photo {
-        margin: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .popular button {
@@ -744,13 +604,7 @@ html {
     }
 
     .card {
-        width: 100%;
-        height: auto;
         margin-bottom: 20px;
-    }
-
-    .central {
-        margin: 0;
     }
 
     form {
@@ -797,6 +651,11 @@ html {
 
     .logotip {
         margin: 20px 0;
+    }
+
+    #cover_1 {
+        position: relative;
+        z-index: 1;
     }
 
     .catalog img {
@@ -865,5 +724,5 @@ html {
 
     #booking button {
         margin-bottom: 40px;
-    } */
+    }
 }
