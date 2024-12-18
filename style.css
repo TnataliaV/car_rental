@@ -118,10 +118,12 @@ button:hover {
     color: #ffffff;
     font-family: 'Inter';
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .about_Us ul {
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-left: -20px;
 }
 
 .popular img {
