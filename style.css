@@ -642,7 +642,7 @@ html {
         font-size: 18px;
         margin-top: 10px;
     }
-    
+
     .cards p {
         font-size: 14px;
         margin-top: 10px;
@@ -788,6 +788,10 @@ html {
         margin: 10px 0;
     }
 
+    .car-m-bottom{
+        padding-bottom: 40px;
+    }
+
     .m-desktop-p {
         display: none !important;
     }
@@ -835,8 +839,8 @@ html {
         margin-top: 20px;
         margin-bottom: 60px;
         width: 267px;
-        margin-left: auto; 
-        margin-right: auto; 
+        margin-left: auto;
+        margin-right: auto;
     }
 
     td {
