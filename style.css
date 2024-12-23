@@ -505,14 +505,9 @@ html {
         background: #ffffff;
         padding: 0 5px;
         margin-top: 5px;
-    }
-
-    .burger-icon {
-        display: block;
-        width: 20px;
-        height: 3px;
-        background-color: #141414;
-        margin: 5px 0;
+        color: #141414;
+        font-size: 24px;
+        font-weight: bolder;
     }
 
     .burger-menu {
@@ -520,26 +515,41 @@ html {
     }
 
     .mobile.links {
-        display: none;
-        position: absolute;
-        top: 48px;
-        right: 0;
-        background-color: #fff;
-        padding: 0 10px;
-        z-index: 10;
-    }
-
-    .mobile.links.open {
         display: block;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100%;
+        background-color: #141414;
+        z-index: 1000;
+        transition: right 0.3s ease-in-out;
+        overflow-y: auto;
+    }
+    
+    .mobile.links.active {
+        right: 0;
+    }
+    
+    .close-menu {
+        position: absolute;
+        top: -35px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 40px;
+        font-weight: normal;
+        cursor: pointer;
+        color: #ffffff;
     }
 
     .links li {
-        margin: 5px 0;
+        margin: 10px;
     }
 
     .links a {
-        color: #141414;
-        font-size: 16px;
+        color: #ffffff;
+        font-size: 18px;
     }
 
     .links ul {
@@ -547,11 +557,19 @@ html {
         flex-direction: column;
         justify-content: center;
         padding: 0 10px;
-        margin: 10px 0;
+        margin-top: 40px;
+    }
+
+    #cover {
+        background-position: right;
+        background-image: url(./img/главная_машина_мобилка.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
     }
 
     .cover {
-        height: auto;
+        height: 350px;
         padding-top: 20px;
         padding-bottom: 30px;
     }
@@ -588,7 +606,7 @@ html {
     }
 
     .coverDescription p {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 10px;
     }
 
@@ -788,7 +806,7 @@ html {
         margin: 10px 0;
     }
 
-    .car-m-bottom{
+    .car-m-bottom {
         padding-bottom: 40px;
     }
 

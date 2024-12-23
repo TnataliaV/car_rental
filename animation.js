@@ -24,7 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.querySelector('.burger-menu').addEventListener('click', function () {
-    const mobileMenu = document.querySelector('.mobile.links');
-    mobileMenu.classList.toggle('open');
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const mobileLinks = document.querySelector('.mobile.links');
+    const closeMenu = document.querySelector('.close-menu');
+
+    burgerMenu.addEventListener('click', function () {
+        mobileLinks.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', function () {
+        mobileLinks.classList.remove('active');
+    });
 });
