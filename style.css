@@ -526,7 +526,7 @@ html {
         transition: right 0.3s ease-in-out;
         overflow-y: auto;
     }
-    
+
     .mobile.links.active {
         right: 0;
     }

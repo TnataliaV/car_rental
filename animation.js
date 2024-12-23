@@ -36,4 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     closeMenu.addEventListener('click', function () {
         mobileLinks.classList.remove('active');
     });
+    
+    document.addEventListener('click', function(event) {
+        if (!mobileLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+            mobileLinks.classList.remove('active');
+        }
+    });
 });
